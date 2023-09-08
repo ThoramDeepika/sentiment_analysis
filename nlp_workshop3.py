@@ -337,8 +337,8 @@ data_vec=tf1.fit_transform(df_new['review_description'])
 data_vec
 
 import pickle
-
-with open('tfidf_vectorizer.pkl', 'wb') as model_file:
+model_filename = 'tfidf_vectorizer.pkl'
+with open('mode_filename', 'wb') as model_file:
   pickle.dump(tf1, model_file)
 
 
@@ -421,6 +421,11 @@ fig.update_layout(title='Model Accuracies',
                   yaxis_range=[0, 1],
                   xaxis_tickangle=0)
 fig.show()
+
+import pickle
+model_filename = 'svm_model.pkl'
+with open(model_filename,'wb') as model_file:
+    pickle.dump(sv,model_file)
 
 
 
