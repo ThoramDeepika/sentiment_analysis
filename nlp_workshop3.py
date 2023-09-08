@@ -338,7 +338,7 @@ data_vec
 
 import pickle
 
-with open('tfidf_vectorizer.pk1', 'wb') as model_file:
+with open('tfidf_vectorizer.pkl', 'wb') as model_file:
   pickle.dump(tf1, model_file)
 
 
